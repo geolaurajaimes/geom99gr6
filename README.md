@@ -4,7 +4,8 @@ Data collection solutions
 https://geolaurajaimes.github.io/geom99gr6/collection.html
 | **Summary Technical Log**                                 |
 |-----------------------------------------------------------|
-**Team:**: 
+
+**Team:** 
 Alison Cooke  
 Emmanuel     
 Laura Jaimes  
