@@ -7,13 +7,13 @@ https://geolaurajaimes.github.io/geom99gr6/collection.html
 
 **Team:** 
 Alison Cooke  
-Emmanuel     
+Emmanuel Ignatius     
 Laura Jaimes  
-Nuthan  
+Nuthan Abhiram    
 
 | **Date Start**        | **hour end**             | **edited by**            | **Contribution**                |  
 |-----------------------|--------------------------|--------------------------|---------------------------------|  
-| 2024-03-28 08:30:00   | 08:37:00                 | Laura                    | Create repository html template |  
+| 2024-03-28 08:30:00   | 08:57:00                 | Laura                    | Create repository html template |  
 | 2024-00-00 00:00:00   | 00:00:00                 | Name                     |                                 |  
 | 2024-00-00 00:00:00   | 00:00:00                 | Name                     |                                 |  
 | 2024-00-00 00:00:00   | 00:00:00                 | Name                     |                                 |  
