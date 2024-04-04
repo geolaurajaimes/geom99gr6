@@ -7,10 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- link to css -->
 		<link rel="stylesheet" href="css/style.css">
+		<!-- link to js -->
+		<script src="js/script.js"></script>
 		<!-- Link to awesome font icons -->
 		<!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
 </head>
 
 <body>
@@ -23,10 +24,20 @@
 	<a href="collection.html">Home</a>
     </nav>
 	<!-- HTML for the Navigation Bar end -->
+	<!-- start dropdown -->
+	<div class="dropdown">
+	  	<button onclick="toggleDropdown()" class="dropbtn">Menú</button>
+		  	<div id="myDropdown" class="dropdown-content">
+				<a href="#survey123">Survey123</a>
+				<a href="#fieldmap">Field Maps</a>
+				<a href="#">Other</a>
+	  	</div>
+	</div>
+	<!-- End dropdown -->
 	
 	<!-- Page content -->
     <div class="solution">
-        <h2>Survey123</h2>
+        <h2 id="survey123">Survey123</h2>
         <p>ArcGIS Survey123 is a solution for easy data collection. Surveys can be designed with configured question formats. It is intuitive in its construction and has a pleasant interface for the user.</p>
         <iframe src="https://survey123.arcgis.com/share/96530d1aaac04a9fb91863b7b517011e"></iframe>
 	<img src="figure/web1.png" alt="Survey123_Laura" class="img-responsive">
@@ -49,7 +60,7 @@
     </div>
 	
     <div class="solution">
-        <h2>Field Maps</h2>
+        <h2 id="fieldmap">Field Maps</h2>
 	   <p>Field maps is best used for data collection, but also has the capability of editing previously collected data. Many municipalities like Kawartha Lakes, Peterborough City and Peterborough County rely on this ESRI solution to collected and edit their assets 
 	    Because FielpMaps can be used on a mobile device using the ESRI app it is well adapted to using in the field as the name implies. And so for collecting municipal assets such as trees or various city network and disperssed assets this application is ideal.
 	    creating the form is easy using Field Map designer where the user can specify the sepcific questions and resulting answers using ranges and character limits as well as including questions that must be answered along with other restrictions like data entry time
