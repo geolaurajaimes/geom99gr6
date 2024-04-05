@@ -6,7 +6,7 @@ nav {
     background-color: #333;
     overflow: hidden;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 nav a {
