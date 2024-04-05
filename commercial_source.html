@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Date: April 4, 2024 (v2)-->
+<!-- Date: April 5, 2024 (v3)-->
 <head>
     <title> Data Collection Solutions - commercial_source </title>
 		<!-- viewport meta tag for responsive windows -->
@@ -24,6 +24,7 @@
 	<a href="collection.html">Home</a>
     </nav>
 	<!-- HTML for the Navigation Bar end -->
+	
 	<!-- start dropdown -->
 	<div class="dropdown">
 	  	<button onclick="toggleDropdown()" class="dropbtn">Menú</button>
@@ -38,26 +39,24 @@
 	<!-- Page content -->
     <div class="solution">
         <h2 id="survey123">Survey123</h2>
-        <p>ArcGIS Survey123 is a solution for easy data collection. Surveys can be designed with configured question formats. It is intuitive in its construction and has a pleasant interface for the user.</p>
-        <iframe src="https://survey123.arcgis.com/share/96530d1aaac04a9fb91863b7b517011e"></iframe>
-	<img src="figure/web1.png" alt="Survey123_Laura" class="img-responsive">
-        <div class="advantages">
-            <h3>Advantages</h3>
-            <ul>
-                <li>Easy to use</li>
-                <li>Integrable with other applications</li>
-		<li>It can be embedded in other applications or websites.</li>
-            </ul>
-        </div>
-        <div class="disadvantages">
-            <h3>Disadvantages</h3>
-            <ul>
-                <li>Analysis tools depend on connectivity</li>
-                <li>Need ESRI paid - license</li>
-            </ul>
-        </div>
-		<div class="clearfix"></div>
-    </div>
+			<p>ArcGIS Survey123 is a solution for easy data collection. Surveys can be designed with configured question formats. It is intuitive in its construction and has a pleasant interface for the user.</p>
+			<img src="figure/web1.png" alt="Survey123_Laura" class="img-responsive">
+			<div class="advantages">
+				<h3>Advantages</h3>
+					<ul>
+						<li>Easy to use</li>
+						<li>Integrable with other applications</li>
+						<li>It can be embedded in other applications or websites.</li>
+					</ul>
+			</div>
+			<div class="disadvantages">
+				<h3>Disadvantages</h3>
+				<ul>
+					<li>Analysis tools depend on connectivity</li>
+					<li>Need ESRI paid - license</li>
+				</ul>
+			</div>
+	</div>
 	
     <div class="solution">
         <h2 id="fieldmap">Field Maps</h2>
@@ -65,92 +64,83 @@
 	    Because FielpMaps can be used on a mobile device using the ESRI app it is well adapted to using in the field as the name implies. And so for collecting municipal assets such as trees or various city network and disperssed assets this application is ideal.
 	    creating the form is easy using Field Map designer where the user can specify the sepcific questions and resulting answers using ranges and character limits as well as including questions that must be answered along with other restrictions like data entry time
 	    which is important to specificy for the resulting data table that is created by the collected data. Along with all of this functionalist the FieldMap application can also integrate warning zones using the geofence function which, by using a preexisting layer, 
-	can create a warning that is displayed on the mobile device when it has entered an area specified by the creator of the application to be a warning zone or an area of danger or simply a notification of where the collection has been taken, like near a building
-	    or near a specific zone or leaving the zone. As well there is a function ality that can allow the survey to be held offline which uses the devices locatio without the use of internet, this is assistened by the creatio of map areas which help to creat a more efficent 
+		can create a warning that is displayed on the mobile device when it has entered an area specified by the creator of the application to be a warning zone or an area of danger or simply a notification of where the collection has been taken, like near a building or near a specific zone or leaving the zone. As well there is a function ality that can allow the survey to be held offline which uses the devices locatio without the use of internet, this is assistened by the creatio of map areas which help to creat a more efficent 
 	    offline map with faster downloading speed, also by downloading a tile package instead of using the web map basemap it create an efficent offline collection and mapping service.</p> 
         <img src="figure/web5.JPG" alt="FieldmapOffline" class="img-responsive"> 
-		<iframe src="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=5239e8d9417c4fd9b9368ae7555b2134"></iframe>
-		<img src="figure/web15.png" alt="Fieldmaps_Laura" class="img-responsive">
 	    <img src="figure/Capture4.PNG" alt="DatainStoryMaps" class="img-responsive">
 	    <p>There are two components to completeing a Field Map the first is the form component in Filed Map designer where the survey form is created ising different types of questions as well as options for answers
 	    giving the creator the change to ilmit character type or even the type od data being entered for an answer like interger, string, double.</p>
 	    <img src="figure/Capture.PNG" alt="Filed Maps Test Form" class="img-responsive">
 	    <p>Once data has been collected it is updatedon the Web Map both in the application of the mobile device and also on the web Map in ArcGIS Online. where symbology and style can be changed and displayed for the public or organization to view and used</p>
-	    
-	</div>	    
-		
-		
+		<p>In Field Maps Designer, a project called 'New Fake Tree map' was created to test this application for data collection, such as trees, for example. Within the Forms tab, I added a combo box named 'Condition' and defined a list of values with four categories. Fields are created for data collection according to the project's needs; for example, for a tree inventory, a 'Fruit Tree' field might be required to indicate if the tree bears fruits. Additionally, a layer displaying the locations of other trees could be included, as in this example. A very interesting feature is to ensure the surveyor covers trees within a certain area, for example, Kawartha Lakes municipality; the city's boundary can be used as a geofence, setting up location alerts whenever the surveyor leaves the area. The resulting Field Map can be viewed on the 'New Fake Tree map' web map at <a href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=232cb7cccd6241abb9ca6d08c7cb9d04" target="_blank">here</a> </p>
+		<img src="figure/web15.png" alt="Fieldmaps_Laura" class="img-responsive">
+    
 		<div class="advantages">
             <h3>Advantages</h3>
-            <ul>
-                <li>Easy to use and easy to create forms</li>
-                <li>Mobile device compatible</li>
-		<li>Creates visually appealing map on ArcGIS Online</li>
-		<li>Can be customized by user and shared at different levels</li>
-		<li>Can include images of collected data which can then be displayed on a dashboard or a story map</li>
-		<li>Can be used offline</li>
-		<li> Data is easily displayed on other ESRI products</li>    
-            </ul>
+				<ul>
+					<li>Easy to use and easy to create forms</li>
+					<li>Mobile device compatible</li>
+					<li>Creates visually appealing map on ArcGIS Online</li>
+					<li>Can be customized by user and shared at different levels</li>
+					<li>Can include images of collected data which can then be displayed on a dashboard or a story map</li>
+					<li>Can be used offline</li>
+					<li> Data is easily displayed on other ESRI products</li>    
+				</ul>
         </div>
         <div class="disadvantages">
             <h3>Disadvantages</h3>
-            <ul>
-                <li>Is a commercial product and must use a bought license</li>
-		    <li> most compatible with other ESRI products <li>
-                <li>Some aspects are more difficult to configure like the geofences</li>
-            </ul>
+				<ul>
+					<li>Is a commercial product and must use a bought license</li>
+					<li> most compatible with other ESRI products <li>
+					<li>Some aspects are more difficult to configure like the geofences</li>
+				</ul>
         </div>
-		<div class="clearfix"></div>
     </div>
 
     <div class="solution">
         <h2>Workforce</h2>
-        <p>This solution allows you to assign tasks and field managers efficiently.</p>
-        <iframe src="https://fleming.maps.arcgis.com/apps/workforce/projects/13b23d4f37834ed9b7aa03f814078f0e/configure/overview"></iframe>
-		<img src="figure/web3.png" alt="Workforce_Laura" class="img-responsive">
-        <div class="advantages">
-            <h3>Advantages</h3>
-            <ul>
-                <li>Allows integrate other survey applications such as Survey123, FieldMaps, Collector</li>
-                <li>Monitoring and updating the database in real time</li>
-            </ul>
-        </div>
-        <div class="disadvantages">
-            <h3>Disadvantages</h3>
-            <ul>
-                <li>Users must be from an ESRI organization</li>
-            </ul>
-        </div>
-		<div class="clearfix"></div>
+			<p>In Workforce, a new project was created to test this data collection application. The name and summary were set. After setting up the project, types of assignments and roles were defined. For example, dispatchers create and assign assignments, while mobile workers carry out the assigned tasks. It's recommended that you add yourself as a mobile worker for testing purposes.</p> 
+			<p>Additionally, customize the map by adding layers, feature pop-ups and labels, and creating offline map areas. The workforce solution can also be integrated with other Esri apps like Navigator, Field Maps, Collector, Explorer, and Survey123. See the example made <a href="link" target="_blank">https://fleming.maps.arcgis.com/apps/workforce/projects/13b23d4f37834ed9b7aa03f814078f0e/configure/overview</a></p>
+			<img src="figure/web3.png" alt="Workforce_Laura" class="img-responsive">
+			<div class="advantages">
+				<h3>Advantages</h3>
+					<ul>
+						<li>Allows integrate other survey applications such as Survey123, FieldMaps, Collector</li>
+						<li>Monitoring and updating the database in real time</li>
+					</ul>
+			</div>
+			<div class="disadvantages">
+				<h3>Disadvantages</h3>
+					<ul>
+						<li>Users must be from an ESRI organization</li>
+					</ul>
+			</div>
     </div>
 
     <div class="solution">
         <h2>application name</h2>
-        <p>Description</p>
-        <iframe src="link"></iframe>
-        <div class="advantages">
-            <h3>Advantages</h3>
-            <ul>
-                <li>Advantages 1</li>
-                <li>Advantages 2</li>
-            </ul>
-        </div>
-        <div class="disadvantages">
-            <h3>Disadvantages</h3>
-            <ul>
-                <li>Disadvantages 1</li>
-                <li>Disadvantages 2</li>
-            </ul>
-        </div>
-		<div class="clearfix"></div>
+			<p>Description</p>
+			<div class="advantages">
+				<h3>Advantages</h3>
+					<ul>
+						<li>Advantages 1</li>
+						<li>Advantages 2</li>
+					</ul>
+			</div>
+			<div class="disadvantages">
+				<h3>Disadvantages</h3>
+					<ul>
+						<li>Disadvantages 1</li>
+						<li>Disadvantages 2</li>
+					</ul>
+			</div>
     </div>
-
 	<!-- Page content end -->
 
 	<!-- Footer start -->
 	<footer> 
 		<div>
-		<footer-heading>GEOM99 - Web Development </footer-heading>
+		<p>GEOM99 - Web Development </p>
 			<p>Class project</p>
 			<p><a href="team.html" target="_blank">Our team</a></p>
 			<p>Collection GIS solutions<p>
