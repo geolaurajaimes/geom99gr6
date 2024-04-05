@@ -5,10 +5,10 @@ body {
 nav {
     background-color: #333;
     overflow: hidden;
+    float: right;
 }
 
 nav a {
-    float: right;
     display: block;
     color: white;
     text-align: center;
