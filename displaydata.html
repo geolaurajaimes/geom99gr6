@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Date: April 3, 2024 (v1)-->
+<!-- Date: April 5, 2024 (v2)-->
 <head>
     <title> Data Display Solutions </title>
 		<!-- viewport meta tag for responsive windows -->
@@ -24,83 +24,123 @@
     </nav>
 	<!-- HTML for the Navigation Bar end -->
 	
-	<!-- Page content -->
+	<!-- start dropdown -->
+	<div class="dropdown">
+		<button onclick="toggleDropdown('dropdown-content')" class="dropbtn">Menú</button>
+		<div class="dropdown-content">
+			<a href="#expb">Experience Builder</a>
+			<a href="#dash">ArcGIS Dashboards</a>
+			<a href="#story">Esri StoryMaps</a>
+			<a href="#hub">ArcGIS Hub</a>
+			<a href="#treem">Tree Management</a>
+			<a href="#geos">Geoserver</a>
+			<a href="#qgisc">QGIS Cloud</a>	
+			<a href="#simcoe">SIMCOE County WEB-GIS</a>		
+			<a href="#osm">OpenStreetMap</a>				
+		</div>
+	</div>
+	<!-- End dropdown -->	
 	
-	<!-- Start template  -->
-    <div class="solution">
-        <h2>Name Application Template copy/paste</h2>
-        <p>Describe what you did</p>
-	    <img src="figure/figurename.png" alt="insert a figure if need, remove this line if not" class="img-responsive">
-    </div>
-	<!-- End template  -->
-
+	<!-- Page content -->
+		
 	<h1>Display data Solutions </h1>
 		<div class="solution">
-			<h2>Experience Builder</h2>
-			<p>ArcGIS Experience Builder Created a project from scratch, using the "Launchpad" canvas type and customized the title. Two previously created AGOL map views were loaded. Added widgets such as "Map" and "Menu" to improve functionality and navigation. The design was then adjusted to suit mobile devices, including changes to colors, fonts, and widget layout. Finally, it was published at this <a href="https://experience.arcgis.com/experience/dfdd326f157844d1837f0c183778019b" target="_blank">Link</a></p>
-			<iframe src="https://experience.arcgis.com/experience/dfdd326f157844d1837f0c183778019b"></iframe>
-			<img src="figure/web9.png" alt="Experience Builder Laura" class="img-responsive">
+			<h2 id="expb">Experience Builder</h2>
+				<p>ArcGIS Experience Builder Created a project from scratch, using the "Launchpad" canvas type and customized the title. Two previously created AGOL map views were loaded. Added widgets such as "Map" and "Menu" to improve functionality and navigation. The design was then adjusted to suit mobile devices, including changes to colors, fonts, and widget layout. Finally, it was published at this <a href="https://experience.arcgis.com/experience/dfdd326f157844d1837f0c183778019b" target="_blank">Link</a></p>
+				<figure>
+					<img src="figure/web9.png" alt="Experience Builder Laura" class="img-responsive">
+					<figcaption>Experience Builder project published interface</figcaption>				
+				</figure>
         </div>
 		
 		<div class="solution">
-			<h2>ArcGIS Dashboards</h2>
+			<h2 id="dash">ArcGIS Dashboards</h2>
 			<p>A new panel was created, its title, labels and summary were edited, then elements such as maps were added, and with the data contained in the maps of the fake tree layer, tables and graphs were inserted, as the data is false, the data is not relevant and finally publish the panel. See Dashboard <a href="https://fleming.maps.arcgis.com/apps/dashboards/88b233fbbfd34d4499a9628e43f2b1dd" target="_blank">here</a></p>
-			<iframe src="https://fleming.maps.arcgis.com/apps/dashboards/88b233fbbfd34d4499a9628e43f2b1dd"></iframe>
-			<img src="figure/web6.png" alt="Laura Dashboard" class="img-responsive">
+			<figure>
+				<img src="figure/web6.png" alt="Laura Dashboard" class="img-responsive">
+				<figcaption>Project on dashboard with 2D and 3D map and statistics</figcaption>	
+			<figure>
         </div>
 		
 		<div class="solution">
-			<h2>Esri StoryMaps</h2>
+			<h2 id="story">Esri StoryMaps</h2>
 			<p>A new story was created from scratch, customizing the title, description and adding multimedia elements such as images and maps. Layouts, themes and elements were configured. After editing and without much perfection, it was published. See StoryMap <a href="https://storymaps.arcgis.com/stories/3cc73ac95eec43cfa4bc9c7bc70f3415" target="_blank">here</a></p>
-			<iframe src="https://storymaps.arcgis.com/stories/3cc73ac95eec43cfa4bc9c7bc70f3415"></iframe>
-			<img src="figure/web7.png" alt="StoryMap Laura" class="img-responsive">
+			<figure>
+				<img src="figure/web7.png" alt="StoryMap Laura" class="img-responsive">
+				<figcaption>Telling a story with Storymap</figcaption>
+			<figure>
         </div>
 		
 		<div class="solution">
-			<h2>ArcGIS Hub</h2>
+			<h2 id="hub">ArcGIS Hub</h2>
 			<p>In the case of ArcGIS Hub, there is no direct access to the application, an ArcGIS Hub could be edited in the context of the Tree Management solution.See it <a href="https://tree-management-3-fleming.hub.arcgis.com/" target="_blank">here</a></p>
-			<iframe src="https://tree-management-3-fleming.hub.arcgis.com/"></iframe>
-			<img src="figure/web12.png" alt="Laura hub" class="img-responsive">
+			<figure>			
+				<img src="figure/web12.png" alt="Laura hub" class="img-responsive">
+				<figcaption>ESRI Hub edited</figcaption>
+			</figure>
         </div>
-		
+						
 		<div class="solution">
-			<h2>OpenStreetMap</h2>
-			<p>For Openstreetmap, the website was used to download geographic data for the Kawartha Lakes area, which was then opened in QGIS for viewing</p>
-			<img src="figure/web10.png" alt="OpenStreetMap Laura" class="img-responsive">
-        </div>
-		
-		<div class="solution">
-			<h2>QGIS Cloud</h2>
-			<p>QGIS Cloud, an account was created and the corresponding plugin was installed in QGIS Desktop. A database was configured and a basemap was loaded</p>
-			<img src="figure/web11.png" alt="Laura QGIS Cloud" class="img-responsive">
-        </div>
-		
-		<div class="solution">
-			<h2>Tree Management</h2>
+			<h2 id="treem">Tree Management</h2>
 			<p>In the case of this solution, it was somewhat overwhelming at first to understand how some elements were integrated with other surveys, maps, views, etc. For the first attempt, only the hub was edited, for the second attempt I edited element by element, being able to better understand how to connect and edit.See both: <a href="https://fleming.maps.arcgis.com/home/item.html?id=df83b773917445e59de3ac1829ffd727" target="_blank">First Try</a> and <a href="https://fleming.maps.arcgis.com/home/item.html?id=90d73ff2cc4848ae8a5660b6741650d0" target="_blank">Second Try</a></p>
-			<iframe src="https://experience.arcgis.com/experience/2f212524ec55480fa443e4e8e1e6ffb3/page/Home/?views=Home"></iframe>
-			<img src="figure/web13.png" alt="Tree Management Laura" class="img-responsive">
+			<figure>
+				<img src="figure/web13.png" alt="Tree Management Laura" class="img-responsive">
+				<figcaption>Main interface of the deployed and edited Tree Management solution</figcaption>
+			</figure>
         </div>
 		
-	<h1>Data storage</h1>
-		<div class="solution">
-			<h2>Geoserver</h2>
-			<p>Geoserver was downloaded, installed and checked to see if it was running properly.</p>
-			<img src="figure/web8.png" alt="Laura geoserver imagen" class="img-responsive">	
-        </div>
+<!-- Start template copy and paste this bloque for your app, do no modify then all of us can be use it -->
+<div class="solution">
+	<h2>Name Application Template</h2>
+		<p>Describe what you did</p>
+		<img src="figure/figurename.png" alt="insert a figure if need, remove this line if not" class="img-responsive">
+</div>
+<!-- End template NOTA: PASTE BEFORE SERVER, BECAUSE IT IS NOT DISPLAY APP -->
 		
-	<h1>Web build with Open source </h1>
-		<div class="solution">
-			<h2>SIMCOE County WEB-GIS</h2>
-			<p>Review of this alternative open source platform, created using open source resources</p>
-			<img src="figure/web14.png" alt="" class="img-responsive">
-        </div>
+		<h1>Server</h1>
+			<div class="solution">
+				<h2 id="geos">Geoserver</h2>
+					<p>Geoserver was downloaded, installed and checked to see if it was running properly.</p>
+					<figure>
+						<img src="figure/web8.png" alt="Laura geoserver imagen" class="img-responsive">	
+						<figcaption>Get familiar with Geoserver</figcaption>
+					</figure>
+			</div>
+			
+			<div class="solution">
+				<h2 id="qgisc">QGIS Cloud</h2>
+					<p>QGIS Cloud, an account was created and the corresponding plugin was installed in QGIS Desktop. A database was configured and a basemap was loaded</p>
+					<figure>
+						<img src="figure/web11.png" alt="Laura QGIS Cloud" class="img-responsive">
+						<figcaption>Get familiar with QGIS Cloud</figcaption>
+					</figure>
+			</div>
+			
+		<h1>Web build with Open source</h1>
+			<div class="solution">
+				<h2 id="simcoe">SIMCOE County WEB-GIS</h2>
+					<p>Review of this alternative open source platform, created using open source resources</p>
+					<figure>
+						<img src="figure/web14.png" alt="" class="img-responsive">
+						<figcaption>GIS alternative built with open source resources</figcaption>
+					</figure>
+			</div>
+		
+		<h1>Data acquired</h1>
+			<div class="solution">
+				<h2 id="osm">OpenStreetMap</h2>
+					<p>For Openstreetmap, the website was used to download geographic data for the Kawartha Lakes area, which was then opened in QGIS for viewing</p>
+					<figure>
+						<img src="figure/web10.png" alt="OpenStreetMap Laura" class="img-responsive">
+						<figcaption>Basemap data retrieved from OSM</figcaption>
+					</figure>
+			</div>
     <!-- Page content end -->
 
 	<!-- Footer start -->
 	<footer> 
 		<div>
-		<p>GEOM99 - Web Development </p>
+			<p>GEOM99 - Web Development </p>
 			<p>Class project</p>
 			<p><a href="team.html" target="_blank">Our team</a></p>
 			<p>Collection GIS solutions<p>
