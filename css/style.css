@@ -8,7 +8,7 @@ nav {
 }
 
 nav a {
-    float: left; /* Modificado para que los enlaces se alineen a la izquierda */
+    float: right;
     display: block;
     color: white;
     text-align: center;
