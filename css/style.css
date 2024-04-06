@@ -1,5 +1,6 @@
 body {
     font-family: "Century Gothic";
+	background-color: #f0f0f0;
 }
 
 nav {
@@ -24,6 +25,9 @@ nav a:hover {
 
 /* https://www.w3schools.com/css/css_dropdowns.asp */
 .dropbtn {
+    position: fixed;
+    top: 50px; 
+    left: 20px;
     background-color: #3498DB;
     color: white;
     padding: 12px;
@@ -31,20 +35,28 @@ nav a:hover {
     border: none;
     margin-top: 10px;
     float: right;
+    font-family: "Century Gothic";	
 }
 
-.main-content {
-    margin-right: 90px;
+.content-container {
+    margin-right: 270px;
+	margin-left: 270px;
+	background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    top: 100px; 
+    left: 20px; 
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 100px; 
+    left: 20px; 
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -62,7 +74,6 @@ nav a:hover {
     background-color: #f1f1f1;
 }
 
-/* show open */
 .show {
     display: block;
 }
@@ -127,4 +138,8 @@ figcaption {
     text-align: center !important;
     font-weight: bold !important;
     font-size: 0.9em !important;
+}
+
+h1 {
+    text-align: center;
 }
