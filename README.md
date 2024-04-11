@@ -24,7 +24,7 @@ Nuthan Abhiram
 | 2024-04-05 12:10:00   | 13:00:00                 | Alison                   | Added discription for qFields, aslo added image for storymap |  
 | 2024-04-08 17:00:00   | 21:00:00                 | Laura                    | organize css, html code, eliminar iframe, validar html, css |  
 | 2024-04-10 09:20:00   | 11:00:00                 | Alison                   |Added to the field map and to dashboard display options, as well as qFields advantages |  
-| 2024-04-11 08:30:00:  | 10:50:00                 | Alison                   |Added scrolling image gallery, added technology used, edited some descriptions and titles |  
+| 2024-04-11 08:30:00  | 10:50:00                 | Alison                   |Added scrolling image gallery, added technology used, edited some descriptions and titles |  
 | 2024-04-11 13:00:00   | 14:00:00                 | Emmanuel                 |Added screenshtot of Survey123, edited its advantages and disadvantages |  
 | 2024-00-00 14:00:00   | 15:00:00                 | Emmanuel                 |Edited advantages and disadvantages of Workforce |  
 | 2024-00-00 00:00:00   | 00:00:00                 | Name                     |                                 |  
