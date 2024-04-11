@@ -1,99 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Date: April 4, 2024 (v2)-->
+<!-- Date: April 8, 2024 (v4)-->
 <head>
     <title> Data Collection Solutions - open_source </title>
 		<!-- viewport meta tag for responsive windows -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- link to css -->
 		<link rel="stylesheet" href="css/style.css">
-		<!-- Link to awesome font icons -->
-		<!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+		<!-- link to js -->
+		<script src="js/script.js"></script>
 </head>
 
 <body>
 	<!-- HTML for the Navigation Bar -->
     <nav id = "navbar">
-	<a href="displaydata.html">Display Data</a>
-        <a href="open_source.html">Open Source</a>
-        <a href="commercial_source.html">Commercial Source</a>
-	<a href="team.html">Team</a>
-	<a href="collection.html">Home</a>
+		<a href="displaydata.html">Display Data</a>
+		<a href="open_source.html">Open Source</a>
+		<a href="commercial_source.html">Commercial Source</a>
+		<a href="team.html">Team</a>
+		<a href="collection.html">Home</a>
     </nav>
 	<!-- HTML for the Navigation Bar end -->
 	
-	<!-- Page content -->
+	<!-- start dropdown -->
+	<div class="dropdown">
+	<button onclick="toggleDropdown('dropdown-content')" class="dropbtn">Menu</button>
+		  	<div id="myDropdown" class="dropdown-content">
+				<a href="#kobo">KoBoToolbox</a>
+				<a href="#qfields">qFields</a>
+				<a href="#itreeeco">i-Tree Eco</a>
+	  	</div>
+	</div>
+	<!-- End dropdown -->
+		
+	<!-- Page content start-->
+	<div class="content-container">	
     <div class="solution">
-        <h2>KoBoToolbox</h2>
-        <p>KoBoToolbox is an open source platform for data collection in the field. Allows organizations to create surveys, forms and collect data on mobile devices without an internet connection.</p>
-        <!-- https://www.w3schools.com/tags/tag_iframe.asp -->
-		<iframe src="https://ee.kobotoolbox.org/i/BAYRNgeG" width="800" height="600"></iframe>
-        <img src="figure/web2.png" alt="Kobo_Laura" class="img-responsive">
-		<div class="advantages">
-            <h3>Advantages</h3>
-            <ul>
-                <li>Easy to use</li>
-                <li>Works without internet connection</li>
-                <li>Customizable and user - friendly</li>
-            </ul>
-        </div>
-        <div class="disadvantages">
-            <h3>Disadvantages</h3>
-            <ul>
-                <li>Limited free</li>
-            </ul>
-        </div>
-		<div class="clearfix"></div>
-    </div>
+        <h2 id="kobo">KoBoToolbox</h2>
+			<p>KoBoToolbox is an open source platform for data collection in the field. Allows organizations to create surveys, forms and collect data on mobile devices without an internet connection.</p>
+			<!-- https://www.w3schools.com/tags/tag_iframe.asp -->
+			<figure>
+				<iframe src="https://ee.kobotoolbox.org/i/BAYRNgeG" width="800" height="600"></iframe>
+				<figcaption>Survey in KoBoToolbox</figcaption>
+			</figure>
+	    
+			<div class="advantages">
+				<h3>Advantages</h3>
+				<ul>
+					<li>Easy to use</li>
+					<li>Works without internet connection</li>
+					<li>Customizable and user - friendly</li>
+				</ul>
+			</div>
+			<div class="disadvantages">
+				<h3>Disadvantages</h3>
+					<ul>
+						<li>Limited free</li>
+					</ul>
+			</div>
+	</div>
 
     <div class="solution">
-        <h2>qFields</h2>
-        <p>Descripcion</p>
-        <img src="figure/web16.png" alt="qfield_Laura" class="img-responsive">
+        <h2 id="qfields">qFields</h2>
+        <p>qFields is an open source platform similar use case as FieldMaps it allows for data collection and customization as well as editing exsiting data. it has the capability to support standalone datasets like vector formats, (KML, GeoJSON, Shapefile, and Geopackage datasets. as well as suporting rasters, (GeoTIFF, JPEG, PNG etc.) these data sets re imported from a URL or compressed peoject file. this application can be run on mobile devoces IOS and Android and also on desktops. Utilizing the QGIS server to support the software.</p>
+	<p>qFileds is a plug in application into QGIS server intigrateing the QFieldCloud, with many versions available for specificied application like the QField 3.0 'Amazonia' which allows for a forest themed approach to collectino data along with many other upadtes making the collection app very usefule
+	especially when used as an asset management tool. </p>	
+	    <figure>       
+			<img src="figure/web16.png" alt="qfield_Laura" class="img-responsive">
+			<figcaption>qfield Project</figcaption>
+		</figure>
+	    <img src="figure/web18.png" alt="qFiledapp" class="img-responsive">
         <div class="advantages">
             <h3>Advantages</h3>
             <ul>
-                <li>Advantages 1</li>
-                <li>Advantages 2</li>
+                <li>Is a free collection app meaning the QField app is free and uses the QGIS server.</li>
+                <li>Can create interactible maps using feature layers and vector layers</li>
+		<li>Users can search through layers to find wha they are looking for, creating an accessible user interface</li>
+		    <li> User can edit collected marks, and create new features useing the pen and polygon creator</li>
+		    <li>The app once downloaded can be used anywhere</li>
+		    <li>Offline applications still work with raster basemap in GEOTIFF format</li>
+		    <!-- https://qfield.org/-->
             </ul>
         </div>
         <div class="disadvantages">
             <h3>Disadvantages</h3>
             <ul>
-                <li>Disadvantages 1</li>
-                <li>Disadvantages 2</li>
+                <li>Can not handle extreemly large data files especially raster data which can become large quickly</li>
+                <li>Offline is not the best it has low capabilities, good internet access if required if core work has to be done on the app.</li>
+		    <!---https://docs.qfield.org/success-stories/heritage-impact-assessment/#4-benefits-and-drawbacks-of-using-qfield-in-an-archaeological-survey-and-archaeological-risk-assessment-jobs--->
             </ul>
         </div>
-		<div class="clearfix"></div>
     </div>
-
     <div class="solution">
-        <h2>OpenTreeMap</h2>
-        <p>Descripcion</p>
-        <iframe src="link"></iframe>
-        <div class="advantages">
-            <h3>Advantages</h3>
-            <ul>
-                <li>Advantages 1</li>
-                <li>Advantages 2</li>
-            </ul>
-        </div>
-        <div class="disadvantages">
-            <h3>Disadvantages</h3>
-            <ul>
-                <li>Disadvantages 1</li>
-                <li>Disadvantages 2</li>
-            </ul>
-        </div>
-		<div class="clearfix"></div>
-    </div>
-
-    <div class="solution">
-        <h2>i-Tree Eco</h2>
+        <h2 id="itreeeco">i-Tree Eco</h2>
         <p>This solution allows the collection and evaluation of trees.</p>
-        <img src="figure/web4.png" alt="Kobo_Laura" class="img-responsive">
+		<figure>
+			<img src="figure/web4.png" alt="itree" class="img-responsive">
+			<figcaption>i-Tree Eco Project</figcaption>			
+		</figure>
         <div class="advantages">
             <h3>Advantages</h3>
             <ul>
@@ -108,16 +112,34 @@
                 <li>It is recommended for small areas at the neighborhood level.</li>
             </ul>
         </div>
-		<div class="clearfix"></div>
     </div>
+	
+	<div class="solution">
+        <h2>App name</h2>
+        <p>Descripcion</p>
+        <div class="advantages">
+            <h3>Advantages</h3>
+				<ul>
+					<li>Advantages 1</li>
+					<li>Advantages 2</li>
+				</ul>
+        </div>
+        <div class="disadvantages">
+            <h3>Disadvantages</h3>
+				<ul>
+					<li>Disadvantages 1</li>
+					<li>Disadvantages 2</li>
+				</ul>
+        </div>
+	</div>
+	</div>
 	<!-- Page content end -->
 	
-	<!-- Footer start -->
 	<footer> 
 		<div>
-		<footer-heading>GEOM99 - Web Development </footer-heading>
+			<p>GEOM99 - Web Development </p>
 			<p>Class project</p>
-			<p><a href="team.html" target="_blank">Our team</a></p>
+			<p><a href="team.html">Our team</a></p>
 			<p>Collection GIS solutions<p>
 		</div>
 	</footer> 
