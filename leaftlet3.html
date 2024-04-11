@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Map </title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+  <div id="map" style="height: 1000px;"></div>
+
+  <script>  // The map is set to a particular location where the data is collected
+    var map = L.map('map').setView([44.349998, -78.750000], 13);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // GeoJSON layers are defined below
+    var geojsonLayer1;
+    var geojsonLayer2;
+
+    function fetchData() { // This function will fetch the data from the first layer which was created to collect the data from the users
+      fetch('https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/New_Assets_Data_Collection/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
+        .then(response => response.json())
+        .then(data => {
+            // This is related to first layer that was added to the map
+          geojsonLayer1 = L.geoJSON(data, { 
+            pointToLayer: function (feature, latlng){
+                return L.marker(latlng, {
+                 // details of the icon
+                    icon: L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+                   // shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                    iconSize:     [20, 40],
+                   // shadowSize:   [20, 20],
+                    iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                    popupAnchor:  [-3, -76]
+                })
+            });
+        },
+            onEachFeature: function (feature, layer) { // onEachfFeature function is to call each feature
+                // This field data wiill be extracted from the feature layer and it is shown as Popup in the marker
+              var fieldData = feature.properties.Asset_type;
+              // This is the ppopup data for each marker
+              layer.bindPopup(fieldData);
+            }
+          }).addTo(map);
+        });
+      }
+  
+      function fetchData2() { // This function will fetch the data from the second layer which was added from kawartha open data website
+        fetch('https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/Bridge_Kawartha/FeatureServer/0/query?where=1=1&outFields=*&f=geojson')
+         .then(response => response.json())
+         .then(data => {
+           geojsonLayer2 = L.geoJSON(data, { 
+             onEachFeature: function (feature, layer) {
+               var fieldData = feature.properties.STREET;
+               layer.bindPopup(fieldData);
+             }
+           }).addTo(map);
+        });
+      }
+    //fetchData frunction is called for both layers
+    fetchData();
+    fetchData2();
+    
+    // This function is for updating the data for every 1 minute for both layers
+    setInterval(fetchData, 60000); 
+    setInterval(fetchData2, 60000); 
+  </script>
+</body>
+</html>
