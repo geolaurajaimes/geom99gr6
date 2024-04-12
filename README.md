@@ -1,7 +1,7 @@
 # geom99gr6
 Data collection solutions
 
-https://geolaurajaimes.github.io/geom99gr6/collection.html
+https://geolaurajaimes.github.io/geom99gr6/index.html
 | **Summary Technical Log**                                 |
 |-----------------------------------------------------------|
 
